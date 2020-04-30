@@ -1,8 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
+import appReducer from "../reducers/appReducer";
 
-// combining reducers into a 'root' reducer
-const rootReducer = {};
-
-const store = configureStore({ reducer: rootReducer });
+const store = configureStore({ reducer: appReducer });
 
 export default store;
