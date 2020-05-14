@@ -1,7 +1,8 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Homepage from "../components/homepage/Homepage";
-import NASAPage from "../components/NASAPage/NASAPage";
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Homepage from '../components/homepage/Homepage';
+import NASAPage from '../components/NASAPage/NASAPage';
+import SnakePage from '../components/snakePage/SnakePage';
 
 const AppRoute = () => {
   return (
@@ -14,7 +15,7 @@ const AppRoute = () => {
           <NASAPage />
         </Route>
         <Route path="/mini-two" exact>
-          <p>Snake</p>
+          <SnakePage />
         </Route>
         <Route path="/mini-three" exact>
           <p>Random Walk Disease</p>

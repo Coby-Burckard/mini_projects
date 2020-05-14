@@ -1,0 +1,23 @@
+.snake__container {
+  border: 2px solid $dark-gray;
+  height: 500px;
+  width: 500px;
+}
+
+.snake__sub-container {
+  height: 99%;
+  width: 99%;
+}
+
+.snake__dot {
+  background-color: $dark-gray;
+  border: 1px solid $white;
+  height: 2%;
+  position: absolute;
+  width: 2%;
+
+  &--food {
+    @extend .snake__dot;
+    background-color: $red;
+  }
+}
