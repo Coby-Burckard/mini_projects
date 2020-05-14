@@ -5,26 +5,24 @@ import { startLoadImages } from '../../actions/NASA';
 import Images from './Images';
 
 const ImageSlider = () => {
-  //hooks
+  //initializing
   const dispatch = useDispatch();
-
-  //loading images on first render
-  useEffect(() => {
-    if (images.length < 1) {
-      dispatch(startLoadImages());
-    }
-    setLoadedImages(0);
-  }, [dispatch, images.length]);
-
-  //initializing component variables
   const [loadedImages, setLoadedImages] = useState(0);
   const [checkedImage, setChecked] = useState(0);
   const images = useSelector(state => state.NASA.images);
 
+  //loading images on first render
+  useEffect(() => {
+    console.log('image slider useEffect triggered');
+    if (images.length < 1) {
+      dispatch(startLoadImages());
+    }
+  }, [dispatch, images.length]);
+
   //handling events
   const handleLoad = () => {
-    console.log('loaded images = ', loadedImages);
     setLoadedImages(loadedImages + 1);
+    console.log('loaded images = ', loadedImages);
   };
 
   const handleRadioClick = index => () => {
@@ -36,7 +34,6 @@ const ImageSlider = () => {
       <div className="slideshow__checkinputs">
         {[...Array(5).keys()].map((item, index) => {
           const isChecked = index === checkedImage;
-          console.log(isChecked);
           return (
             <input
               className="slideshow__input"
@@ -50,8 +47,9 @@ const ImageSlider = () => {
         })}
         <Images
           images={images}
-          handleLoad={handleLoad}
           checkedImage={checkedImage}
+          handleLoad={handleLoad}
+          loadedImages={loadedImages}
         />
       </div>
 
