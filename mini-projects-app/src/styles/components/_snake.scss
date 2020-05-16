@@ -1,16 +1,25 @@
+.snake {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
 .snake__container {
-  border: 2px solid $dark-gray;
+  border: 2px solid $dark-green;
   height: 500px;
   width: 500px;
 }
 
 .snake__sub-container {
+  position: relative;
+  top: 0.5%;
+  left: 0.5%;
   height: 99%;
   width: 99%;
 }
 
 .snake__dot {
-  background-color: $dark-gray;
+  background-color: $dark-green;
   border: 1px solid $white;
   height: 2%;
   position: absolute;
@@ -18,6 +27,46 @@
 
   &--food {
     @extend .snake__dot;
-    background-color: $red;
+    background-color: $burnt;
+  }
+}
+
+.snake__navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: $s-size $xs-size;
+  width: 100%;
+}
+
+.snake__navigation-subsection {
+  display: flex;
+  justify-content: center;
+}
+
+.snake__speed-select {
+  color: $dark-green;
+  font-size: $s-size;
+  padding: 0 $xs-size;
+}
+
+.snake__speed-option {
+}
+
+.snake__button {
+  background-color: blue;
+  border: 2px solid white;
+  border-radius: 1rem;
+  color: white;
+  font-size: $m-size;
+  height: 2.5rem;
+  transition: 0.1s ease;
+  width: 6rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }

@@ -1,24 +1,13 @@
 // colors
-$blue: blue;
-$red: red;
-$tan: #fdd9b5;
+$burnt: #e27d60;
+$light-blue: #85dcba;
+$orange: #e8a87c;
+$purple: #c38d9e;
+$dark-green: #41b3a3;
+
 $black: black;
 $white: #fff;
-
 $light-gray: #cfcfcf;
-$light-blue: lighten(
-  $color: $blue,
-  $amount: 15%,
-);
-$light-red: lighten(
-  $color: $red,
-  $amount: 10%,
-);
-$light-tan: lighten(
-  $color: $tan,
-  $amount: 10%,
-);
-
 $dark-gray: darken($light-gray, 40%);
 
 // font size
