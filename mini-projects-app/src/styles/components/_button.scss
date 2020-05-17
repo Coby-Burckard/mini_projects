@@ -1,0 +1,19 @@
+.button {
+  background-color: blue;
+  border: 2px solid white;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  font-size: $m-size;
+  height: 2.5rem;
+  transition: 0.1s ease;
+  width: 7rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

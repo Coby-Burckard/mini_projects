@@ -1,0 +1,40 @@
+.wiki {
+}
+
+.wiki__entry-list {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 600px;
+}
+
+.wiki__entry {
+  padding: 0 $s-size;
+}
+
+.wiki__entry--loader {
+  margin: $m-size auto;
+}
+
+.wiki__input {
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: $m-size;
+  outline: none;
+  padding: 0.2rem 0;
+  margin: $s-size;
+}
+
+.wiki__form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.wiki__entry-title {
+  margin-bottom: $xs-size;
+  padding-bottom: none;
+}

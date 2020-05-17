@@ -11,7 +11,7 @@ const StartPauseButton = () => {
   };
 
   return (
-    <button className="snake__button" onClick={handleClick}>
+    <button className="button" onClick={handleClick}>
       {started ? 'Pause' : 'Play'}
     </button>
   );

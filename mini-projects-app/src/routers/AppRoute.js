@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Homepage from '../components/homepage/Homepage';
 import NASAPage from '../components/NASAPage/NASAPage';
 import SnakePage from '../components/snakePage/SnakePage';
+import WikiPage from '../components/wikiPage/WikiPage';
 
 const AppRoute = () => {
   return (
@@ -21,7 +22,7 @@ const AppRoute = () => {
           <p>Random Walk Disease</p>
         </Route>
         <Route path="/mini-four" exact>
-          <p>Wiki scraping</p>
+          <WikiPage />
         </Route>
         <Route path="/mini-five" exact>
           <p>something with web sockets</p>

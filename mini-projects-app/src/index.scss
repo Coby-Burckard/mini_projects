@@ -1,5 +1,8 @@
+@import '../node_modules/normalize-scss/sass/normalize/import-now';
 @import './styles/general/settings';
 @import './styles/general/base';
 @import './styles/general/generics';
+@import './styles/components/button';
 @import './styles/components/slideshow';
 @import './styles/components/snake';
+@import './styles/components/wiki';
