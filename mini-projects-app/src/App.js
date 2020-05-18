@@ -1,11 +1,13 @@
-import React from "react";
-import AppRouter from "./routers/AppRoute";
+import React from 'react';
+import AppRouter from './routers/AppRoute';
+import BackgroundSVG from './components/images/BackgroundSVG';
 
 const App = () => {
   return (
-    <div>
+    <>
+      <BackgroundSVG />
       <AppRouter />
-    </div>
+    </>
   );
 };
 
