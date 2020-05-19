@@ -4,6 +4,7 @@ import Homepage from '../components/homepage/Homepage';
 import NASAPage from '../components/NASAPage/NASAPage';
 import SnakePage from '../components/snakePage/SnakePage';
 import WikiPage from '../components/wikiPage/WikiPage';
+import StockPage from '../components/stockPage/StockPage';
 
 const AppRoute = () => {
   return (
@@ -25,7 +26,7 @@ const AppRoute = () => {
           <WikiPage />
         </Route>
         <Route path="/mini-five" exact>
-          <p>something with web sockets</p>
+          <StockPage />
         </Route>
       </Switch>
     </BrowserRouter>

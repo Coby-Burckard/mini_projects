@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
@@ -15,7 +15,7 @@ const Navigation = () => {
         <p>Wiki scraping</p>
       </NavLink>
       <NavLink to="/mini-five" exact>
-        <p>something with web sockets</p>
+        <p>Stock web sockets</p>
       </NavLink>
     </div>
   );

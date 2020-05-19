@@ -1,0 +1,44 @@
+.stock {
+}
+
+.stocks__container {
+  background-color: $white;
+  display: flex;
+  height: 500px;
+  width: 500px;
+}
+
+.stock__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stock__text {
+  font-size: $l-size;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease;
+}
+
+.stock__text--gray {
+  color: $light-gray;
+}
+
+.stock__text--green {
+  color: green;
+}
+
+.stock__text--red {
+  color: red;
+}
+
+.stock__text--white {
+  color: $white;
+}
+
+.stock__text--transition {
+  transition: unset;
+}
