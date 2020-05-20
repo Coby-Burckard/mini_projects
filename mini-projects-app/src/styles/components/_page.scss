@@ -1,0 +1,23 @@
+.page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.page__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.page__section--center {
+  @extend .page__section;
+  width: 500px;
+}
+
+.page__section--side {
+  @extend .page__section;
+  flex-grow: 1;
+}

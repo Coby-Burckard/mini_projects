@@ -1,8 +1,11 @@
-import React from "react";
-import Navigation from "./Navigation";
+import React from 'react';
 
 const Homepage = () => {
-  return <Navigation />;
+  return (
+    <div>
+      <p>Welcome to the homepage of the min-project site</p>
+    </div>
+  );
 };
 
 export default Homepage;
