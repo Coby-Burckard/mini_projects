@@ -1,8 +1,8 @@
 .button {
-  background-color: blue;
-  border: 2px solid white;
+  background-color: $blue;
+  border: 3px solid $dark-blue;
   border-radius: 1rem;
-  color: white;
+  color: $white;
   cursor: pointer;
   font-size: $m-size;
   height: 2.5rem;
@@ -14,6 +14,7 @@
   }
 
   &:hover {
+    background-color: $light-blue;
     transform: scale(1.1);
   }
 }

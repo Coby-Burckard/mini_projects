@@ -5,7 +5,7 @@ import RingLoader from 'react-spinners/RingLoader';
 const Loading = ({ animateLoading }) => {
   return (
     <div className={classnames('slideshow__slide', { s1: animateLoading })}>
-      <RingLoader size={100} color={'#fff'} loading={!animateLoading} />
+      <RingLoader size={100} color={'#003399'} loading={!animateLoading} />
     </div>
   );
 };

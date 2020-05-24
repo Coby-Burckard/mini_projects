@@ -1,0 +1,55 @@
+.ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity $normal-time ease;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  align-items: center;
+  background-color: white;
+  border: 7px solid $blue;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  height: 21rem;
+  justify-content: flex-start;
+  opacity: 1;
+  outline: none;
+  padding: 0;
+  position: fixed;
+  transition: 1s ease;
+  width: 40rem;
+}
+
+.modal__button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &:hover {
+    transform: translate(-50%, 0) scale(1.1);
+  }
+}
+
+.modal__p {
+  font-size: $m-size;
+  margin: $m-size $s-size;
+}
+
+.modal__link {
+  color: $text-blue;
+}

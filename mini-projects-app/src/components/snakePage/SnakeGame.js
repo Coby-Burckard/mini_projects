@@ -92,7 +92,7 @@ const SnakeGame = () => {
   }
 
   return (
-    <div className="snake middle">
+    <div className="snake">
       <div className="snake__container">
         <div className="snake__sub-container">
           <Snake snakeDots={snakeDots} />

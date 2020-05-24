@@ -5,10 +5,11 @@
   background-color: $white;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 400px;
   overflow-x: hidden;
   overflow-y: scroll;
-  width: 500x;
+  width: 600x;
+  max-width: 600px;
 }
 
 .wiki__entry {
@@ -21,7 +22,8 @@
 
 .wiki__input {
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid $dark-blue;
+  color: $black;
   font-size: $m-size;
   outline: none;
   padding: 0.2rem 0;
@@ -32,6 +34,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  margin: $m-size 0;
 }
 
 .wiki__entry-title {

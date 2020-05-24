@@ -2,18 +2,37 @@
 }
 
 .stocks__container {
+  align-items: center;
   background-color: $white;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 500px;
   width: 500px;
 }
 
+.stocks__paragraph {
+  text-align: center;
+  font-size: $m-size;
+  line-height: 2.5rem;
+}
+
+.stocks__sub-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 .stock__container {
-  width: 50%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 30%;
+}
+
+.stock__logo {
+  height: 10rem;
+  width: 10rem;
 }
 
 .stock__text {

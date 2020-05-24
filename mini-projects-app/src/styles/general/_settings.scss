@@ -1,9 +1,11 @@
 // colors
-$burnt: #e27d60;
-$light-blue: #85dcba;
-$orange: #e8a87c;
-$purple: #c38d9e;
-$dark-green: #41b3a3;
+$blue: #3366cc;
+$light-blue: #6699ff;
+$dark-blue: #003399;
+$text-blue: darken(
+  $color: $dark-blue,
+  $amount: 15%,
+);
 
 $black: black;
 $white: #fff;

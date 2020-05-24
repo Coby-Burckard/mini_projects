@@ -5,7 +5,7 @@
 }
 
 .slideshow__slides {
-  background-color: $light-gray;
+  background-color: $white;
   display: flex;
   height: 100%;
   width: 500%;
@@ -28,22 +28,23 @@
 }
 
 .slideshow__buttons {
-  bottom: 20px;
+  bottom: 50%;
   display: flex;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 240px);
 }
 
 .slideshow__bar {
-  border: 2px solid white;
+  background-color: $white;
+  border: 2px solid $light-blue;
   cursor: pointer;
   height: 0.75rem;
   margin: 0.5rem;
   width: 4rem;
 
   &:hover {
-    background-color: white;
+    background-color: $light-blue;
   }
 }
 
@@ -72,5 +73,5 @@
 }
 
 .slideshow__bar--checked {
-  background-color: white;
+  background-color: $light-blue;
 }

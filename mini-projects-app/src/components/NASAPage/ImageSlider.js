@@ -22,7 +22,6 @@ const ImageSlider = () => {
   //handling events
   const handleLoad = () => {
     setLoadedImages(loadedImages + 1);
-    console.log('loaded images = ', loadedImages);
   };
 
   const handleRadioClick = index => () => {
@@ -30,7 +29,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="slideshow middle">
+    <div className="slideshow">
       <div className="slideshow__checkinputs">
         {[...Array(5).keys()].map((item, index) => {
           const isChecked = index === checkedImage;

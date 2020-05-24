@@ -15,9 +15,22 @@
 .page__section--center {
   @extend .page__section;
   width: 500px;
+  justify-content: center;
 }
 
 .page__section--side {
   @extend .page__section;
   flex-grow: 1;
+}
+
+.page__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__title {
+  font-size: $ml-size;
+  margin: 0;
+  margin-right: $ml-size;
 }
