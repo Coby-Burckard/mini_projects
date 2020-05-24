@@ -13,7 +13,7 @@ const StockPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="stock">
       <TitleBlock title="Stock Websockets">
         <p className="modal__p">
           A full stack mini project. The node + ws backend establishes a

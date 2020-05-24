@@ -7,7 +7,9 @@ const Page = props => {
       <div className="page__section--side">
         <NavSection nav={[1, 2]} />
       </div>
-      <div className="page__section--center">{props.children}</div>
+      <div className="page__section--center">
+        <div className="center-background">{props.children}</div>
+      </div>
       <div className="page__section--side">
         <NavSection nav={[3, 4]} />
       </div>

@@ -1,7 +1,7 @@
 .page {
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .page__section {
@@ -14,8 +14,10 @@
 
 .page__section--center {
   @extend .page__section;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 500px;
-  justify-content: center;
 }
 
 .page__section--side {
@@ -25,6 +27,7 @@
 
 .page__header {
   display: flex;
+  margin-top: 3rem;
   justify-content: center;
   align-items: center;
 }
@@ -32,5 +35,5 @@
 .page__title {
   font-size: $ml-size;
   margin: 0;
-  margin-right: $ml-size;
+  margin-right: $m-size;
 }

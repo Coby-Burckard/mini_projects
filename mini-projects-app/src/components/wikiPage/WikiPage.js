@@ -5,7 +5,7 @@ import TitleBlock from '../page/TitleBlock';
 
 const WikiPage = () => {
   return (
-    <div className="wiki middle">
+    <div className="wiki">
       <TitleBlock title="Scrape Wikipedia">
         <p className="modal__p">
           A full stack mini project. The Wikipedia Page for the user’s input is

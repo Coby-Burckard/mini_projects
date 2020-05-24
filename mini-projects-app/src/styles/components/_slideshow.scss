@@ -1,12 +1,14 @@
 .slideshow {
-  max-height: 500px;
-  width: 500px;
+  max-height: 75%;
+  width: 95%;
+  margin-left: 2.5%;
   overflow: hidden;
 }
 
 .slideshow__slides {
   background-color: $white;
   display: flex;
+  align-items: flex-end;
   height: 100%;
   width: 500%;
 }

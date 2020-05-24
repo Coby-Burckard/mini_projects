@@ -10,33 +10,40 @@ import Page from '../components/page/Page';
 const AppRoute = () => {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" exact>
-          <Page>
-            <Homepage />
-          </Page>
-        </Route>
-        <Route path="/1" exact>
-          <Page>
-            <NASAPage />
-          </Page>
-        </Route>
-        <Route path="/2" exact>
-          <Page>
-            <SnakePage />
-          </Page>
-        </Route>
-        <Route path="/3" exact>
-          <Page>
-            <StockPage />
-          </Page>
-        </Route>
-        <Route path="/4" exact>
-          <Page>
-            <WikiPage />
-          </Page>
-        </Route>
-      </Switch>
+      <div className="base-background"></div>
+      <div className="middle-circle-one"></div>
+      <div className="middle-circle-two"></div>
+      <Route
+        render={({ location }) => (
+          <Switch location={location}>
+            <Route path="/" exact>
+              <Page>
+                <Homepage />
+              </Page>
+            </Route>
+            <Route path="/1" exact>
+              <Page>
+                <NASAPage />
+              </Page>
+            </Route>
+            <Route path="/2" exact>
+              <Page>
+                <SnakePage />
+              </Page>
+            </Route>
+            <Route path="/3" exact>
+              <Page>
+                <StockPage />
+              </Page>
+            </Route>
+            <Route path="/4" exact>
+              <Page>
+                <WikiPage />
+              </Page>
+            </Route>
+          </Switch>
+        )}
+      />
     </BrowserRouter>
   );
 };

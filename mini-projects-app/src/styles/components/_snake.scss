@@ -1,14 +1,18 @@
 .snake {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 73%;
   background-color: $white;
 }
 
 .snake__container {
-  border: 2px solid $blue;
-  height: 500px;
-  margin-top: $m-size;
-  width: 500px;
+  border: 3px solid $dark-blue;
+  background-color: $background-blue;
+  height: 100%;
+  margin-top: $s-size;
+  width: 92%;
 }
 
 .snake__sub-container {
@@ -20,15 +24,15 @@
 }
 
 .snake__dot {
-  background-color: $dark-blue;
-  border: 1px solid $white;
+  background-color: $white;
+  border: 1px solid $dark-blue;
   height: 2%;
   position: absolute;
   width: 2%;
 
   &--food {
     @extend .snake__dot;
-    background-color: $light-blue;
+    background-color: $dark-blue;
   }
 }
 

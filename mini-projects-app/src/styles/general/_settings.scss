@@ -6,6 +6,8 @@ $text-blue: darken(
   $color: $dark-blue,
   $amount: 15%,
 );
+$background-blue: lighten($light-blue, 20%);
+$background-purple: #5858aa;
 
 $black: black;
 $white: #fff;

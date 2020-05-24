@@ -1,17 +1,13 @@
 .svg {
   @extend .button;
-  background-color: $dark-blue;
+  background-color: $white;
+  border-radius: 6rem;
+  border: 7px solid $dark-blue;
   height: 11rem;
   width: 11rem;
-  border-radius: 5.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &:hover {
-    background-color: $blue;
-    border-color: $blue;
-  }
 }
 
 .svg__img {

@@ -1,15 +1,20 @@
 .wiki {
+  display: flex;
+  height: 88%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wiki__entry-list {
   background-color: $white;
+  border-radius: 4rem;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  width: 600x;
-  max-width: 600px;
+  width: 100%;
 }
 
 .wiki__entry {

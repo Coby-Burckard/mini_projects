@@ -1,0 +1,41 @@
+.base-background {
+  background-color: $background-blue;
+  border-radius: 3rem;
+  height: 90%;
+  left: 3%;
+  position: absolute;
+  top: 5%;
+  width: 94%;
+  z-index: -2;
+}
+
+.middle-circle-one {
+  background-color: $background-purple;
+  border-radius: 50%;
+  height: 66%;
+  width: 33%;
+  position: absolute;
+  left: 42%;
+  top: 7.5%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+
+.middle-circle-two {
+  background-color: $background-purple;
+  border-radius: 50%;
+  height: 66%;
+  width: 33%;
+  position: absolute;
+  left: 57%;
+  top: 26.5%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+
+.center-background {
+  background-color: $white;
+  height: 85%;
+  width: 100%;
+  border-radius: 5rem;
+}
