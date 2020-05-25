@@ -1,3 +1,3 @@
-const url = 'http://localhost:4000';
+const url = 'https://cobys-mini-projects-backend.herokuapp.com';
 
 export { url };

@@ -1,3 +1,3 @@
-const SERVER_URL = 'ws://localhost:8080';
+const SERVER_URL = 'ws://cobys-mini-projects-backend.herokuapp.com/';
 
 export { SERVER_URL };
