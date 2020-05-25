@@ -31,19 +31,13 @@
 }
 
 .homepage__link {
-  background-color: $background-purple;
-  border: 3px solid $background-purple;
-  border-radius: 3rem;
-  color: $white;
-  padding: 0.2rem 0;
+  @extend .button;
+  color: $background-purple;
+  border-color: $background-purple;
+  width: 8rem;
+  height: 1.5rem;
+  padding: 0.3rem 0;
   text-decoration: none;
-  font-size: $m-size;
-  transition: 0.1s;
-
-  &:hover {
-    transform: scale(1.1);
-    background-color: $background-blue;
-  }
 }
 
 .homepage__img-container {
