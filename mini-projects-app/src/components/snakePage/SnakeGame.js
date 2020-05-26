@@ -32,7 +32,7 @@ const SnakeGame = () => {
   const { speedFunction, started } = useSelector(state => state.snake);
   const [snakeDots, setSnakeDots] = useState(initialSnake);
   const [direction, setDirection] = useState(initialDirection);
-  const [speed, setSpeed] = useState(initialSpeed);
+  const [speed, setSpeed] = useState(speedFunction || initialSpeed);
   const [foodDot, setFood] = useState(randomFood);
   const [initializationFlag, setInitializationFlag] = useState(false);
 
